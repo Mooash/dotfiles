@@ -8,21 +8,16 @@ is_osx || return 1
 recipes=(
   ansible
   bash
-  cmatrix
-  cowsay
   git
   git-extras
   htop-osx
-  hub
   id3tool
   lesspipe
   man2html
-  mercurial
   nmap
   sl
   ssh-copy-id
   terminal-notifier
-  the_silver_searcher
   tree
 )
 

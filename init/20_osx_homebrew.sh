@@ -17,15 +17,15 @@ brew update
 # Functions used in subsequent init scripts.
 
 # Tap Homebrew kegs.
-function brew_tap_kegs() {
-  kegs=($(setdiff "${kegs[*]}" "$(brew tap)"))
-  if (( ${#kegs[@]} > 0 )); then
-    e_header "Tapping Homebrew kegs: ${kegs[*]}"
-    for keg in "${kegs[@]}"; do
-      brew tap $keg
-    done
-  fi
-}
+#function brew_tap_kegs() {
+#  kegs=($(setdiff "${kegs[*]}" "$(brew tap)"))
+#  if (( ${#kegs[@]} > 0 )); then
+#    e_header "Tapping Homebrew kegs: ${kegs[*]}"
+#    for keg in "${kegs[@]}"; do
+#      brew tap $keg
+#    done
+#  fi
+#}
 
 # Install Homebrew recipes.
 function brew_install_recipes() {
