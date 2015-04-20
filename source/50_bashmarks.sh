@@ -2,4 +2,4 @@
 
 #export SDIRS=$DOTFILES/conf/bashmarks.conf
 
-source $DOTFILES/vendor/bashmarks/bashmarks.sh
+source $DOTFILES/vendor/shellmarks/bashmarks.sh

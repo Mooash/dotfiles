@@ -11,8 +11,6 @@ PATH="/usr/local/sbin:$PATH"
 PATH="/usr/local/opt/gnu-sed/libexec/gnubin:$PATH"
 export PATH
 
-source ~/bin/bashmarks.sh
-
 if [ -f ~/.bash_aliases ]; then . ~/.bash_aliases; fi
 
 # Trim new lines and copy to clipboard
