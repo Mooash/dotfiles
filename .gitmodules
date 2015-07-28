@@ -7,3 +7,6 @@
 [submodule "vendor/shellmarks"]
 	path = vendor/shellmarks
 	url = https://github.com/Bilalh/shellmarks.git
+[submodule "link/.vim/bundle/puppet"]
+	path = link/.vim/bundle/puppet
+	url = git://github.com/rodjek/vim-puppet.git
