@@ -8,8 +8,33 @@ set background=dark
 " Auto detect file type
 filetype on
 
+" Create vimrc autocmd group and remove any existing vimrc autocmds,
+" in case .vimrc is re-sourced.
+augroup vimrc
+  autocmd!
+augroup END
+
+" Fix page up and down
+map <PageUp> <C-U>
+map <PageDown> <C-D>
+imap <PageUp> <C-O><C-U>
+imap <PageDown> <C-O><C-D>
+
+
+" When editing a file, always jump to the last known cursor position. Don't do
+" it for commit messages, when the position is invalid, or when inside an event
+" handler (happens when dropping a file on gvim).
+autocmd vimrc BufReadPost *
+  \ if &ft != 'gitcommit' && line("'\"") > 0 && line("'\"") <= line("$") |
+  \   exe "normal g`\"" |
+  \ endif
+
 " Start vim-plug
 call plug#begin('~/.vim/plugged')
+
+Plug 'fatih/vim-go', {'for': 'go'}
+Plug 'mustache/vim-mustache-handlebars'
+Plug 'chase/vim-ansible-yaml'
 
 " Add plugins to &runtimepath
 call plug#end()
