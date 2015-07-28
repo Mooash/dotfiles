@@ -5,5 +5,5 @@ set number
 hi comment ctermfg=6
 set background=dark
 
-" Auto detec file type
+" Auto detect file type
 filetype on
