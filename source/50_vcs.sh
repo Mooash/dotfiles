@@ -37,6 +37,11 @@ alias gs-all='eachdir git status'
 # Git update submodules
 alias gus-all='git submodule foreach git pull origin master'
 
+# SVN shortcuts
+alias su='svn update .'
+alias sd='svn diff'
+alias sm='svn commit -m'
+
 # open all changed files (that still actually exist) in the editor
 function ged() {
   local files=()
