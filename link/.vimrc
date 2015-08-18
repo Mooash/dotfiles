@@ -79,6 +79,8 @@ endif
 " highlighting for some of our configs
 au BufReadPost ~/**/svn/sysadmin/ssh_config_template/conf.d/* setlocal filetype=sshconfig
 au BufReadPost ~/.ssh/conf.d/* setlocal filetype=sshconfig
+" Nginx Configs
+au BufReadPost ~/**/svn/openresty-config/** setlocal filetype=nginx 
 
 " Don't let the puppet plugin do auto alignment
 let g:puppet_align_hashes = 0

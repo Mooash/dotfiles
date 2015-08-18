@@ -41,6 +41,7 @@ alias gus-all='git submodule foreach git pull origin master'
 alias su='svn update .'
 alias sd='svn diff'
 alias sm='svn commit -m'
+alias st='svn status'
 
 # open all changed files (that still actually exist) in the editor
 function ged() {
