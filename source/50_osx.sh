@@ -21,3 +21,7 @@ alias c="tr -d '\n' | pbcopy"
 
 # Start ScreenSaver. This will lock the screen if locking is enabled.
 alias ss="open /System/Library/Frameworks/ScreenSaver.framework/Versions/A/Resources/ScreenSaverEngine.app"
+
+# NVM Stuff
+export NVM_DIR=~/.nvm
+source $(brew --prefix nvm)/nvm.sh
