@@ -10,3 +10,6 @@
 [submodule "link/.vim/bundle/puppet"]
 	path = link/.vim/bundle/puppet
 	url = git://github.com/rodjek/vim-puppet.git
+[submodule "link/.vim/bundle/vim-colors_duotones"]
+	path = link/.vim/bundle/vim-colors_duotones
+	url = https://github.com/atelierbram/vim-colors_duotones.git
