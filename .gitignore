@@ -19,3 +19,6 @@
 *LOCAL*
 
 /conf/rescue_time_api_key
+
+# Ignore vim file
+/link/.vim/.netrwhist
