@@ -47,6 +47,7 @@ call plug#end()
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 Plugin 'airblade/vim-gitgutter'
+Plugin 'bling/vim-airline'
 
 " Activeate pathogen
 execute pathogen#infect()
@@ -75,3 +76,7 @@ let g:puppet_align_hashes = 0
 " TODO noautoindent isn't enough to stop stupid indenting with comments, need
 " to look into smartindent and the puppet module
 au BufReadPost *.pp setlocal iskeyword+=^:,^- noautoindent nosmartindent
+
+" Always show status bar
+set laststatus=2
+let g:airline_powerline_fonts = 1
