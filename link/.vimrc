@@ -64,10 +64,11 @@ if has("autocmd")
 endif
 
 " highlighting for some of our configs
-au BufReadPost ~/**/svn/sysadmin/ssh_config_template/conf.d/* setlocal filetype=sshconfig
 au BufReadPost ~/.ssh/conf.d/* setlocal filetype=sshconfig
-" Nginx Configs
-au BufReadPost ~/**/svn/openresty-config/** setlocal filetype=nginx 
+
+" Spell checking
+set complete+=kspell
+autocmd BufRead,BufNewFile *.md setlocal spell spelllang=en_au
 
 " Don't let the puppet plugin do auto alignment
 let g:puppet_align_hashes = 0
@@ -80,3 +81,10 @@ au BufReadPost *.pp setlocal iskeyword+=^:,^- noautoindent nosmartindent
 " Always show status bar
 set laststatus=2
 let g:airline_powerline_fonts = 1
+" We need set our font MacVim
+set guifont=Menlo\ for\ Powerline
+
+" Include local config if it exists
+if filereadable($HOME . "/.vimrc.local")
+  source ~/.vimrc.local
+endif

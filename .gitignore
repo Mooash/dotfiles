@@ -7,9 +7,6 @@
 /link/.ssh/id_*
 /link/.ssh/known_hosts
 
-# Don't commit Vim plugins, vim-plug will install them.
-/link/.vim/plugged
-
 # Don't commit rbenv temp files.
 /link/.rbenv/shims/
 /link/.rbenv/versions/
@@ -20,5 +17,11 @@
 
 /conf/rescue_time_api_key
 
-# Ignore vim file
-/link/.vim/.netrwhist
+# Vim stuff
+# Don't commit Vim plugins, vim-plug will install them.
+/link/.vim/plugged
+# Don't include our spelling files
+link/.vim/spell/
+# Don't include local config
+link/.vimrc.local
+link/.vim/.netrwhist
