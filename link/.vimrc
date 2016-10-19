@@ -37,7 +37,7 @@ call plug#begin('~/.vim/plugged')
 
 Plug 'fatih/vim-go', {'for': 'go'}
 Plug 'mustache/vim-mustache-handlebars'
-Plug 'chase/vim-ansible-yaml'
+"Plug 'chase/vim-ansible-yaml'
 
 " Add plugins to &runtimepath
 call plug#end()
@@ -48,6 +48,10 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 Plugin 'airblade/vim-gitgutter'
 Plugin 'bling/vim-airline'
+Plugin 'xolox/vim-misc'
+Plugin 'xolox/vim-notes'
+Plugin 'xolox/vim-lua-ftplugin'
+Plugin 'pearofducks/ansible-vim'
 
 " Activeate pathogen
 execute pathogen#infect()
@@ -88,3 +92,5 @@ set guifont=Menlo\ for\ Powerline
 if filereadable($HOME . "/.vimrc.local")
   source ~/.vimrc.local
 endif
+
+set shell=/bin/bash
