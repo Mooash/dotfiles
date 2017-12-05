@@ -21,7 +21,8 @@
 # Don't commit Vim plugins, vim-plug will install them.
 /link/.vim/plugged
 # Don't include our spelling files
-link/.vim/spell/
+/link/.vim/spell/
 # Don't include local config
-link/.vimrc.local
-link/.vim/.netrwhist
+/link/.vimrc.local
+/link/.vim/.netrwhist
+/bin/subl
