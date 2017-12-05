@@ -9,7 +9,6 @@ kegs=(
   caskroom/cask
   caskroom/drivers
   caskroom/fonts
-  denji/nginx
   homebrew/bundle
   homebrew/core
   homebrew/nginx
