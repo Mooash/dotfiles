@@ -38,7 +38,7 @@ call plug#begin('~/.vim/plugged')
 Plug 'fatih/vim-go', {'for': 'go'}
 Plug 'mustache/vim-mustache-handlebars'
 Plug 'airblade/vim-gitgutter'
-Plug 'bling/vim-airline'
+Plug 'vim-airline/vim-airline'
 Plug 'xolox/vim-misc'
 Plug 'xolox/vim-notes'
 Plug 'xolox/vim-lua-ftplugin'
@@ -50,10 +50,6 @@ Plug 'morhetz/gruvbox'
 " Add plugins to &runtimepath
 call plug#end()
 " End vim-plug
-
-" set the runtime path to include Vundle and initialize
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
 
 " Activeate pathogen
 execute pathogen#infect()
