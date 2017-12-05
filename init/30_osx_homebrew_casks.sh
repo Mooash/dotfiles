@@ -9,6 +9,12 @@ kegs=(
   caskroom/cask
   caskroom/drivers
   caskroom/fonts
+  denji/nginx
+  homebrew/bundle
+  homebrew/core
+  homebrew/nginx
+  homebrew/services
+  homebrew/x11
 )
 brew_tap_kegs
 
@@ -16,6 +22,7 @@ brew_tap_kegs
 brew cask info this-is-somewhat-annoying 2>/dev/null
 
 # Homebrew casks
+# Update with "brew cask list"
 casks=(
   # Applications
   alfred
