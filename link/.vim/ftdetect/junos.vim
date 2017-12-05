@@ -1,0 +1,1 @@
+/Users/jloh/.dotfiles/vendor/vim-junos-syntax/ftdetect/junos.vim

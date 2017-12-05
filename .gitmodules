@@ -25,3 +25,9 @@
 [submodule "link/.vim/bundle/vim-airline"]
 	path = link/.vim/bundle/vim-airline
 	url = https://github.com/bling/vim-airline.git
+[submodule "link/.vim/bundle/vim-json"]
+	path = link/.vim/bundle/vim-json
+	url = https://github.com/elzr/vim-json.git
+[submodule "vendor/vim-junos-syntax"]
+	path = vendor/vim-junos-syntax
+	url = https://github.com/ClockworkNet/vim-junos-syntax.git
