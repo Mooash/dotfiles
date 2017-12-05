@@ -6,19 +6,80 @@ is_osx || return 1
 
 # Homebrew recipes
 recipes=(
+  aalib
   ansible
+  autossh
+  awscli
   bash
+  bash-completion
+  coreutils
+  curl
+  dbus
+  dirmngr
+  docker-compose
+  dos2unix
+  ffmpeg
+  fish
+  gawk
+  gflags
+  ghi
   git
   git-extras
-  htop-osx
-  id3tool
-  lesspipe
-  man2html
+  git-lfs
+  glide
+  gnu-sed
+  gnupg
+  gpg-agent
+  guetzli
+  htop
+  httpie
+  httrack
+  hugo
+  imapfilter
+  ipcalc
+  iperf
+  jq
+  libao
+  libcaca
+  libidn
+  libusb-compat
+  livestreamer
+  lua@5.1
+  lynx
+  macvim
+  md5sha1sum
+  mtr
+  mutt
   nmap
-  sl
+  node
+  nvm
+  offlineimap
+  homebrew/nginx/openresty
+  homebrew/nginx/openresty-debug
+  homebrew/nginx/openresty-openssl
+  peco
+  platypus
+  postgresql
+  pwgen
+  pyenv-virtualenv
+  qt
+  redis
+  rtv
+  shellcheck
   ssh-copy-id
+  sslscan
+  streamlink
+  subversion
+  swftools
+  tiger-vnc
   terminal-notifier
-  tree
+  tmux
+  tor
+  unbound
+  unrar
+  watch
+  wget
+  wireshark
 )
 
 brew_install_recipes
