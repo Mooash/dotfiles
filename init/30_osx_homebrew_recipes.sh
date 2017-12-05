@@ -6,22 +6,28 @@ is_osx || return 1
 
 # Homebrew recipes
 recipes=(
-  aalib
   ansible
+  arping
+  automake
   autossh
   awscli
   bash
   bash-completion
+  bash-git-prompt
+  brotli
+  clamav
+  cmake
   coreutils
   curl
   dbus
+  dhcping
   dirmngr
   docker-compose
   dos2unix
   ffmpeg
   fish
+  fortune
   gawk
-  gflags
   ghi
   git
   git-extras
@@ -29,25 +35,29 @@ recipes=(
   glide
   gnu-sed
   gnupg
+  go
   gpg-agent
   guetzli
+  heroku/brew/heroku
   htop
   httpie
   httrack
   hugo
+  imagemagick
   imapfilter
   ipcalc
   iperf
+  isl@0.11
   jq
-  libao
-  libcaca
-  libidn
   libusb-compat
   livestreamer
-  lua@5.1
   lynx
+  linode/cli/linode-cli
+  lolcat
   macvim
   md5sha1sum
+  minicom
+  mosh
   mtr
   mutt
   nmap
@@ -57,27 +67,31 @@ recipes=(
   homebrew/nginx/openresty
   homebrew/nginx/openresty-debug
   homebrew/nginx/openresty-openssl
-  peco
   platypus
-  postgresql
+  p7zip
+  pkg-config
   pwgen
   pyenv-virtualenv
   qt
   redis
   rtv
+  rpm2cpio
+  rsync
+  ruby
   shellcheck
+  s3cmd
   ssh-copy-id
   sslscan
   streamlink
   subversion
-  swftools
   tiger-vnc
   terminal-notifier
   tmux
   tor
-  unbound
   unrar
   watch
+  weechat
+  wego
   wget
   wireshark
 )
