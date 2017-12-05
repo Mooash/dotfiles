@@ -9,10 +9,14 @@ kegs=(
   caskroom/cask
   caskroom/drivers
   caskroom/fonts
+  caskroom/versions
+  heroku/brew
   homebrew/bundle
   homebrew/core
   homebrew/nginx
   homebrew/services
+  homebrew/versions
   homebrew/x11
+  josegonzalez/php
 )
 brew_tap_kegs
