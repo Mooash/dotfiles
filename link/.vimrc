@@ -37,6 +37,14 @@ call plug#begin('~/.vim/plugged')
 
 Plug 'fatih/vim-go', {'for': 'go'}
 Plug 'mustache/vim-mustache-handlebars'
+Plug 'airblade/vim-gitgutter'
+Plug 'bling/vim-airline'
+Plug 'xolox/vim-misc'
+Plug 'xolox/vim-notes'
+Plug 'xolox/vim-lua-ftplugin'
+Plug 'pearofducks/ansible-vim'
+Plug 'elzr/vim-json'
+Plug 'morhetz/gruvbox'
 "Plug 'chase/vim-ansible-yaml'
 
 " Add plugins to &runtimepath
@@ -46,12 +54,6 @@ call plug#end()
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
-Plugin 'airblade/vim-gitgutter'
-Plugin 'bling/vim-airline'
-Plugin 'xolox/vim-misc'
-Plugin 'xolox/vim-notes'
-Plugin 'xolox/vim-lua-ftplugin'
-Plugin 'pearofducks/ansible-vim'
 
 " Activeate pathogen
 execute pathogen#infect()
@@ -71,8 +73,8 @@ endif
 au BufReadPost ~/.ssh/conf.d/* setlocal filetype=sshconfig
 
 " Spell checking
-set complete+=kspell
-autocmd BufRead,BufNewFile *.md setlocal spell spelllang=en_au
+"set complete+=kspell
+"autocmd BufRead,BufNewFile *.md setlocal spell spelllang=en_au
 
 " Don't let the puppet plugin do auto alignment
 let g:puppet_align_hashes = 0
