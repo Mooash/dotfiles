@@ -45,6 +45,7 @@ Plug 'xolox/vim-lua-ftplugin'
 Plug 'pearofducks/ansible-vim'
 Plug 'elzr/vim-json'
 Plug 'morhetz/gruvbox'
+Plug 'plasticboy/vim-markdown', { 'for': 'markdown' }
 "Plug 'chase/vim-ansible-yaml'
 
 " Add plugins to &runtimepath
