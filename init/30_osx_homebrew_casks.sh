@@ -21,6 +21,7 @@ casks=(
   docker
   dropbox
   firefox
+  font-hack-nerd-font
   google-drive
   istat-menus
   iterm2
