@@ -43,7 +43,7 @@ Plug 'xolox/vim-misc'
 Plug 'xolox/vim-notes'
 Plug 'xolox/vim-lua-ftplugin'
 Plug 'pearofducks/ansible-vim'
-Plug 'elzr/vim-json'
+Plug 'elzr/vim-json', { 'for': 'json' }
 Plug 'morhetz/gruvbox'
 Plug 'plasticboy/vim-markdown', { 'for': 'markdown' }
 "Plug 'chase/vim-ansible-yaml'
@@ -61,8 +61,9 @@ if has("autocmd")
   " filetype detection
   "" see http://beerpla.net/2008/04/02/how-to-add-a-vim-file-extension-to-syntax-highlighting/
   augroup filenames
-    autocmd BufRead,BufNewFile *.go setlocal filetype=go
-    autocmd BufRead,BufNewFile *.md setlocal filetype=markdown
+    autocmd BufRead,BufNewFile *.go   setlocal filetype=go
+    autocmd BufRead,BufNewFile *.md   setlocal filetype=markdown
+    autocmd BufRead,BufNewFile *.json setlocal filetype=json
   augroup end
 endif
 
