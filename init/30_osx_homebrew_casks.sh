@@ -22,6 +22,7 @@ casks=(
   dropbox
   firefox
   font-hack-nerd-font
+  font-menlo-for-powerline
   google-drive
   istat-menus
   iterm2
