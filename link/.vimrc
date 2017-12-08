@@ -46,6 +46,7 @@ Plug 'pearofducks/ansible-vim'
 Plug 'elzr/vim-json', { 'for': 'json' }
 Plug 'morhetz/gruvbox'
 Plug 'plasticboy/vim-markdown', { 'for': 'markdown' }
+Plug 'python-mode/python-mode', { 'for': 'python' }
 "Plug 'chase/vim-ansible-yaml'
 
 " Add plugins to &runtimepath
