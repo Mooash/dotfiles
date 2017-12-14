@@ -35,6 +35,7 @@ casks=(
   reggy
   sourcetree
   spotify
+  sublime-text
   torbrowser
   vagrant
   virtualbox
