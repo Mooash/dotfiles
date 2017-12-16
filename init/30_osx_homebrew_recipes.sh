@@ -40,6 +40,7 @@ recipes=(
   guetzli
   heroku/brew/heroku
   htop
+  httpdiff
   httpie
   httrack
   hugo
