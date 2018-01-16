@@ -18,6 +18,7 @@ recipes=(
   clamav
   cmake
   coreutils
+  cpanminus
   curl
   dbus
   dhcping
