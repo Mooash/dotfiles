@@ -72,6 +72,7 @@ recipes=(
   platypus
   p7zip
   pkg-config
+  pipenv
   pwgen
   pyenv-virtualenv
   qt
