@@ -8,6 +8,7 @@ is_osx || return 1
 recipes=(
   ansible
   arping
+  autojump
   automake
   autossh
   awscli
