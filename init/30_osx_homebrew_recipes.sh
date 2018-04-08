@@ -24,7 +24,6 @@ recipes=(
   dbus
   dhcping
   dirmngr
-  docker-compose
   dos2unix
   ffmpeg
   fish
