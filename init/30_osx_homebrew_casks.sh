@@ -12,6 +12,7 @@ brew cask info this-is-somewhat-annoying 2>/dev/null
 casks=(
   # Applications
   alfred
+  anybar
   bartender
   bettertouchtool
   charles
