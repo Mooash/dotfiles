@@ -24,6 +24,7 @@ casks=(
   font-hack-nerd-font
   font-menlo-for-powerline
   google-drive
+  hacker-menu
   istat-menus
   iterm2
   itsycal
