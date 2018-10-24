@@ -18,6 +18,7 @@ recipes=(
   brotli
   clamav
   cmake
+  colordiff
   coreutils
   cpanminus
   curl
