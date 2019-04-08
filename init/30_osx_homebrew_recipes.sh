@@ -9,7 +9,6 @@ recipes=(
   ansible
   ansible-lint
   arping
-  autoconf
   autojump
   automake
   autossh
@@ -28,28 +27,24 @@ recipes=(
   dhcping
   direnv
   dirmngr
-  dnstrace
-  docker
-  docker-compose
-  docker-machine
+  rs/tap/dnstrace
   dos2unix
   fabric
   ffmpeg
+  figlet
   fish
   fortune
   gawk
-  gettext
   ghi
   git
   git-extras
   git-lfs
   glide
   gnu-sed
-  gnupg
-  gnutls
   go
   gpg-agent
   guetzli
+  heroku/brew/heroku
   htop
   httpdiff
   httpie
@@ -60,10 +55,10 @@ recipes=(
   ipcalc
   iperf
   isl@0.11
+  jmeter
   jq
-  libusb-compat
+  linode/cli/linode-cli
   livestreamer
-  lolcat
   macvim
   md5sha1sum
   minicom
@@ -71,33 +66,28 @@ recipes=(
   mtr
   mutt
   nativefier
-  nettle
   nmap
   node
   nvm
   offlineimap
+  homebrew/nginx/openresty
+  homebrew/nginx/openresty-debug
   p7zip
+  peco
   pigz
   pipenv
   platypus
   postgresql
   pwgen
-  pyenv
   pyenv-virtualenv
-  python
-  python3
-  python@2
-  qrencode
   qt
   rbenv
   rdesktop
-  readline
   redis
   rpm2cpio
   rsync
   rtv
   ruby
-  ruby-build
   s3cmd
   screenfetch
   screenresolution
@@ -112,7 +102,6 @@ recipes=(
   tiger-vnc
   tmux
   tor
-  tree
   unbound
   unrar
   watch
@@ -120,7 +109,6 @@ recipes=(
   wego
   wget
   wireshark
-  xz
   yarn
   youtube-dl
   yq
