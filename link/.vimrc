@@ -45,7 +45,7 @@ Plug 'xolox/vim-lua-ftplugin'
 Plug 'pearofducks/ansible-vim'
 Plug 'elzr/vim-json', { 'for': 'json' }
 Plug 'morhetz/gruvbox'
-Plug 'plasticboy/vim-markdown', { 'for': 'markdown' }
+"Plug 'plasticboy/vim-markdown', { 'for': 'markdown' }
 Plug 'editorconfig/editorconfig-vim'
 "Plug 'python-mode/python-mode', { 'for': 'python' } - can't get to work on OSX
 "Plug 'chase/vim-ansible-yaml'
