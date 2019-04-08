@@ -7,7 +7,9 @@ is_osx || return 1
 # Homebrew recipes
 recipes=(
   ansible
+  ansible-lint
   arping
+  autoconf
   autojump
   automake
   autossh
@@ -15,21 +17,28 @@ recipes=(
   bash
   bash-completion
   bash-git-prompt
+  bat
   brotli
   clamav
   cmake
   colordiff
   coreutils
-  cpanminus
   curl
   dbus
   dhcping
+  direnv
   dirmngr
+  dnstrace
+  docker
+  docker-compose
+  docker-machine
   dos2unix
+  fabric
   ffmpeg
   fish
   fortune
   gawk
+  gettext
   ghi
   git
   git-extras
@@ -37,10 +46,10 @@ recipes=(
   glide
   gnu-sed
   gnupg
+  gnutls
   go
   gpg-agent
   guetzli
-  heroku/brew/heroku
   htop
   httpdiff
   httpie
@@ -54,8 +63,6 @@ recipes=(
   jq
   libusb-compat
   livestreamer
-  lynx
-  linode/cli/linode-cli
   lolcat
   macvim
   md5sha1sum
@@ -63,41 +70,60 @@ recipes=(
   mosh
   mtr
   mutt
+  nativefier
+  nettle
   nmap
   node
   nvm
   offlineimap
-  homebrew/nginx/openresty
-  homebrew/nginx/openresty-debug
-  homebrew/nginx/openresty-openssl
-  platypus
   p7zip
-  pkg-config
+  pigz
   pipenv
+  platypus
+  postgresql
   pwgen
+  pyenv
   pyenv-virtualenv
+  python
+  python3
+  python@2
+  qrencode
   qt
+  rbenv
+  rdesktop
+  readline
   redis
-  rtv
   rpm2cpio
   rsync
+  rtv
   ruby
-  shellcheck
+  ruby-build
   s3cmd
+  screenfetch
+  screenresolution
+  shellcheck
+  speedtest-cli
   ssh-copy-id
   sslscan
   streamlink
+  subnetcalc
   subversion
-  tiger-vnc
   terminal-notifier
+  tiger-vnc
   tmux
   tor
+  tree
+  unbound
   unrar
   watch
   weechat
   wego
   wget
   wireshark
+  xz
+  yarn
+  youtube-dl
+  yq
 )
 
 brew_install_recipes
