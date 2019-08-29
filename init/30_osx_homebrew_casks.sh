@@ -12,39 +12,30 @@ brew cask info this-is-somewhat-annoying 2>/dev/null
 casks=(
   # Applications
   alfred
-  anybar
+  appcleaner
   bartender
-  bettertouchtool
-  charles
   clamxav
-  contextsflux
-  dash
+  contexts
   docker
-  dropbox
+  flux
+  gpg-suite
   firefox
   font-hack-nerd-font
   font-menlo-for-powerline
-  google-drive
   hacker-menu
   istat-menus
-  iterm2
   itsycal
   karabiner-elements
-  livestreamer-twitch-gui
-  logitech-gaming-software
+  streamlink-twitch-gui
   macvim
+  muzzle
   ngrok
   reggy
-  sourcetree
   spotify
-  sublime-text
-  torbrowser
-  vagrant
-  virtualbox
-  virtualbox-extension-pack
+  telegram
   vlc
+  visual-studio-code
   wireshark
-  xquartz
 )
 
 # Install Homebrew casks.
@@ -54,5 +45,5 @@ if (( ${#casks[@]} > 0 )); then
   for cask in "${casks[@]}"; do
     brew cask install $cask
   done
-  brew cask cleanup
+  brew cleanup
 fi

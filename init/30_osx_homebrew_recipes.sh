@@ -10,108 +10,55 @@ recipes=(
   ansible-lint
   arping
   autojump
-  automake
   autossh
   awscli
   bash
   bash-completion
   bash-git-prompt
   bat
-  brotli
-  clamav
-  cmake
   colordiff
   coreutils
   curl
-  dbus
-  dhcping
   direnv
-  dirmngr
-  rs/tap/dnstrace
   dos2unix
-  fabric
-  ffmpeg
-  figlet
   fish
-  fortune
   gawk
-  ghi
   git
   git-extras
   git-lfs
-  glide
   gnu-sed
   go
-  gpg-agent
-  guetzli
-  heroku/brew/heroku
   htop
   httpdiff
   httpie
   httrack
   hugo
-  imagemagick
   imapfilter
   ipcalc
   iperf
-  isl@0.11
-  jmeter
   jq
-  linode/cli/linode-cli
-  livestreamer
   macvim
   md5sha1sum
-  minicom
   mosh
   mtr
   mutt
-  nativefier
   nmap
-  node
-  nvm
   offlineimap
-  homebrew/nginx/openresty
-  homebrew/nginx/openresty-debug
-  p7zip
-  peco
-  pigz
   pipenv
-  platypus
-  postgresql
   pwgen
-  pyenv-virtualenv
-  qt
-  rbenv
-  rdesktop
-  redis
-  rpm2cpio
   rsync
-  rtv
-  ruby
-  s3cmd
-  screenfetch
-  screenresolution
-  shellcheck
   speedtest-cli
   ssh-copy-id
   sslscan
-  streamlink
   subnetcalc
-  subversion
   terminal-notifier
-  tiger-vnc
   tmux
   tor
-  unbound
   unrar
   watch
   weechat
-  wego
   wget
-  wireshark
-  yarn
   youtube-dl
-  yq
 )
 
 brew_install_recipes
