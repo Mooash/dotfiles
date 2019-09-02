@@ -51,8 +51,13 @@ spoon.MiroWindowsManager:bindHotkeys({
 })
 
 -- Move to other screen
-hs.hotkey.bind({"cmd", "alt", "ctrl", "shift"}, "r", function()
+hs.hotkey.bind(hyper, "r", function()
   local win = hs.window.focusedWindow()
   local screen = win:screen()
   win:moveToScreen(screen:next())
+end)
+
+-- Alfred clipboard
+hs.hotkey.bind(hyper, "c", function()
+  hs.eventtap.keyStroke({"cmd", "alt"}, "c")
 end)
