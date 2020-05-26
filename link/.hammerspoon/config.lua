@@ -1,7 +1,7 @@
 local config = {}
 
 -- Hyper Key
-config.hyper = {"ctrl", "alt", "cmd", "shift"}
+config.hyper = {"ctrl", "alt", "cmd"}
 
 -- Modules to load
 config.modules = {
@@ -20,6 +20,8 @@ config.launcher = {
     { key = "M", application = "Spotify" },
     { key = "T", application = "Tweetbot" },
     { key = "P", application = "Pocket Casts" },
+    { key = "O", application = "1Password 7" },
+    { key = "R", application = "Reeder", hyper = {"ctrl", "alt", "cmd", "shift"} },
   }
 }
 

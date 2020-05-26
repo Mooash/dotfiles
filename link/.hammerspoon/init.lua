@@ -116,3 +116,32 @@ end)
 --hs.hotkey.bind(config.hyper, "c", function()
 --  hs.eventtap.keyStroke({"cmd", "alt"}, "c")
 --end)
+
+
+-- Spotify stuff
+--hs.hotkey.bind(config.hyper, "i", function()
+--  hs.spotify.displayCurrentTrack()
+--end)
+
+hs.hotkey.bind(config.hyper, "p", function()
+  hs.spotify.playpause()
+end)
+
+hs.hotkey.bind(config.hyper, "m", function()
+  hs.spotify.next()
+end)
+
+hs.hotkey.bind(config.hyper, "n", function()
+  hs.spotify.previous()
+end)
+
+-- Volume stuff
+hs.hotkey.bind(config.hyper, "u", function()
+  local output = hs.audiodevice.defaultOutputDevice()
+  output:setOutputVolume(output:volume() + 5)
+end)
+
+hs.hotkey.bind(config.hyper, "d", function()
+  local output = hs.audiodevice.defaultOutputDevice()
+  output:setOutputVolume(output:volume() - 5)
+end)

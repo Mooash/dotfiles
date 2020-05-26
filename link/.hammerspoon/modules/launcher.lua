@@ -15,10 +15,10 @@ local alert = require 'hs.alert'
 
 local function toggle_app(app_name)
   local frontWindow = application.frontmostApplication()
-  if frontWindow:name() == app_name then
+  if frontWindow and frontWindow:name() == app_name then
     frontWindow:hide()
   else
-    application.launchOrFocus(app_name) 
+    application.launchOrFocus(app_name)
   end
 end
 
@@ -27,19 +27,24 @@ local function init_module()
     notify.show("Applications has no available configs", "", "Set some configs set in config.launcher or unload this module", "")
     return
   end
-  
+
   for _, app in ipairs(config.launcher.bindings) do
     if app.key == nil then
       error("Application is missing a key value.")
     end
-    
+
     if app.application ~= nil then
-      
-      hotkey.bind(config.launcher.hyper or { "cmd", "ctrl", "alt" }, app.key, function()
-        toggle_app(app.application)
-      end)
+      if app.hyper ~= nil then
+        hotkey.bind(app.hyper, app.key, function()
+          toggle_app(app.application)
+        end)
+      else
+        hotkey.bind(config.launcher.hyper or { "cmd", "ctrl", "alt" }, app.key, function()
+          toggle_app(app.application)
+        end)
+      end
     end
-    
+
     if app.command ~= nil then
       hotkey.bind(config.launcher.hyper or { "cmd", "ctrl", "alt" }, app.key, function() os.execute(app.command) end)
     end
