@@ -90,6 +90,13 @@ let g:airline_powerline_fonts = 1
 " We need set our font MacVim
 set guifont=Menlo\ for\ Powerline
 
+function ShowGitDiff()
+    new +set\ filetype=diff | silent read !git diff --cached
+endfunction
+
+autocmd FileType gitcommit exec ShowGitDiff()
+autocmd FileType gitcommit cnoreabbrev q quitall
+
 " Include local config if it exists
 if filereadable($HOME . "/.vimrc.local")
   source ~/.vimrc.local
