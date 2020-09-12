@@ -1,0 +1,11 @@
+[directory]
+fish_style_pwd_dir_length = 1
+
+[time]
+disabled = false
+
+[battery]
+disabled = false
+
+[[battery.display]]
+threshold = 90
