@@ -24,4 +24,3 @@ alias ss="open /System/Library/Frameworks/ScreenSaver.framework/Versions/A/Resou
 
 # NVM Stuff
 export NVM_DIR=~/.nvm
-source $(brew --prefix nvm)/nvm.sh
